@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="90sp"
+    android:background="#dfdfdf"
+    android:layout_weight="9"
+    >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/userlogo"
+            android:layout_margin="4dp"
+            android:layout_weight="7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/textView_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="user"
+                    android:layout_weight="2"
+                    android:padding="1dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/textView_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="rate"
+                    android:layout_weight="8"
+                    android:padding="1dp"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/starlogo"
+                    android:layout_margin="4dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="Comment"
+                android:layout_weight="2"
+                android:padding="1dp"
+                android:layout_marginBottom="2dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
